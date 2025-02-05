@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break문, continue문</title>
+</head>
+<body>
+    
+    <script>
+        // break문 - 반복문 강제 종료
+        for(let i = 1; i <= 10; i++){
+            console.log(i);
+            
+            if(i === 5){
+                console.log("반복문 종료");
+                break; // i가 5일때 반복문 종료
+            }
+        }
+        // continue문 - 특정조건에 건너뛰기
+        for (let c = 1; c <= 10; c++){
+            if (c % 2 === 0){
+                continue;
+            }
+            console.log(c);
+        }
+        // while문 안에서 break문, continue문 사용하기
+        let n = 0;
+        while (n < 10){
+            n++;
+            if (n === 7) {
+                console.log("7에서 종료");
+                break;
+            }
+            if (n % 2 === 0){
+                continue;
+                
+            }
+            console.log(n);
+            
+        }
+    </script>
+</body>
+</html>
